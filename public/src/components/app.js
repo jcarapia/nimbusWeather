@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import SearchField from '../containers/search_field'
+import SearchField from '../containers/search_field';
+import WeatherList from '../containers/weather_list';
 
 export default class App extends Component {
   render() {
@@ -8,6 +9,7 @@ export default class App extends Component {
       <div>
       React-Redux Template for Heroku
       <SearchField />
+      <WeatherList />
       </div>
     );
   }

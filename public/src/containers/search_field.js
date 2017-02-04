@@ -10,6 +10,17 @@ class SearchField extends Component {
 		this.state = {city: ''}
 	}
 
+	componentWillMount() {
+		this.setState({city: localStorage.getItem("weather_city")});
+	}
+
+	componentDidMount() {
+		if(this.state.city) {
+			this.props.getWeather(this.state.city);
+			console.log(this.state.city)
+		}
+	}
+
 	onInputChange(e) {
 		this.setState({city: e.target.value});
 	}
@@ -17,6 +28,7 @@ class SearchField extends Component {
 	onFormSubmit(e) {
 		e.preventDefault();
 		this.props.getWeather(this.state.city);
+		localStorage.setItem('weather_city', this.state.city);
 	}
 
 	render() {

@@ -7,13 +7,14 @@ class WeatherList extends Component {
 
 	renderWeather(data){
 
+		if(data.query.results.channel){
+
+
 		const temps_array = data.query.results.channel;
 		console.log('the temps array', temps_array);
 
-
 		return (
 			temps_array.map(function(day){
-				 //return (<div>{day.item.forecast.text}</div>)
 
 				const date = day.item.forecast.date;
 				const week_day = day.item.forecast.day;
@@ -31,7 +32,11 @@ class WeatherList extends Component {
 				)
 			})
 		)
+	} else {
+		return (<div>Loading</div>)
 	}
+}
+
 
 	render() {
 		return (

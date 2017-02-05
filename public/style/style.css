@@ -6,6 +6,16 @@
     overflow: auto;
 }
 
+.logo {
+	margin-top: 15px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.logo img {
+	width: 30%;
+	height: auto;
+}
 
 .app_title {
 	text-align: center;
@@ -43,12 +53,10 @@
 }
 
 .weather_day {
-	border: 2px solid blue;
-	border-radius: 8px;
 	text-align: center;
 	padding: 2px;
-	background-color: rgba(52, 152, 219, 0.1);
-	z-index: -1;
+	background-color: rgba(230, 230, 230, 0.2);
+	box-shadow: 4px 4px 4px rgb(225, 225, 225);
 }
 
 .weather_day p {

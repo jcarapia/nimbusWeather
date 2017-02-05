@@ -34,8 +34,7 @@ class SearchField extends Component {
 
 	render() {
 		return (
-
-			<form className="input-group col-md-6" onSubmit={this.onFormSubmit.bind(this)}>
+			<form className="input-group col-md-6 col-sm-8" onSubmit={this.onFormSubmit.bind(this)}>
 				<input 
 					value={this.state.city}
 					className="form-control"
@@ -46,7 +45,6 @@ class SearchField extends Component {
 					<button type="submit" className="btn btn-secondary">Submit</button>
 				</span>
 			</form>
-
 		)
 	}
 }

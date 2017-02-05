@@ -40,7 +40,7 @@ class WeatherList extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="container weather_list">
 				{this.props.weather.map(this.renderWeather)}
 			</div>
 		)

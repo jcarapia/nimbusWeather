@@ -1,0 +1,39 @@
+.clearfix {
+    overflow: auto;
+}
+
+.weather_list {
+	margin-top: 10px;
+}
+
+.weather_day_container {
+	float: left;
+	margin-bottom: 5px;
+}
+
+.weather_day {
+	border: 2px solid blue;
+	border-radius: 8px;
+	text-align: center;
+	padding: 2px;
+	background-color: rgba(52, 152, 219, 0.1);
+	z-index: -1;
+}
+
+.weather_icon {
+	background-image: url('icons/png/sky.png');
+	height: 128px;
+	width: 128px;
+	float: left;
+	z-index: 1;
+}
+
+.low_temp {
+	display: inline-block;
+	margin: 5px 10px;
+}
+
+.high_temp {
+	display: inline-block;
+	margin: 5px: 10px;
+}

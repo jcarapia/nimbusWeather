@@ -15,19 +15,22 @@ class WeatherList extends Component {
 
 		return (
 			temps_array.map(function(day){
-
+				const location = day.title.split('-')[1];
 				const date = day.item.forecast.date;
 				const week_day = day.item.forecast.day;
 				const high = day.item.forecast.high;
 				const low = day.item.forecast.low;
 				const desc = day.item.forecast.text;
+				const code = day.item.forecast.code;
 				return (
 					<WeatherDay 
+						location={location}
 						date={date}
 						week_day={week_day}
 						high={high}
 						low={low}
 						desc={desc}
+						code={code}
 					/>
 				)
 			})
@@ -39,6 +42,7 @@ class WeatherList extends Component {
 
 
 	render() {
+
 		return (
 			<div className="container weather_list">
 				{this.props.weather.map(this.renderWeather)}

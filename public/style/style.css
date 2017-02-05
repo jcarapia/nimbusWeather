@@ -1,6 +1,37 @@
+
+/*
+// -- Congigurations --- 
+*/
 .clearfix {
     overflow: auto;
 }
+
+
+.app_title {
+	text-align: center;
+}
+
+.app_search {
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+}
+
+.input-group {
+	margin: 0 auto;
+}
+
+.input-group button {
+	background-color: #3498db;
+	color: #fff;
+}
+
+.input-group button:hover, 
+.input-group button:active {
+	background-color: #2980b9;
+	color: #fff;
+}
+
 
 .weather_list {
 	margin-top: 10px;
@@ -20,20 +51,57 @@
 	z-index: -1;
 }
 
+.weather_day p {
+	margin-bottom: 1px;
+}
+
+/*
+// -- Icon Classes
+*/
 .weather_icon {
-	background-image: url('icons/png/sky.png');
 	height: 128px;
 	width: 128px;
 	float: left;
-	z-index: 1;
+	margin-left: 5px;
 }
 
-.low_temp {
+.snow {
+	background-image: url('icons/png/snow.png');
+}
+
+.thunder {
+	background-image: url('icons/png/thunder.png');
+}
+
+.rain {
+	background-image: url('icons/png/rain.png');
+}
+
+.partly_cloudy {
+	background-image: url('icons/png/cloud-sun.png');
+}
+
+.cloudy {
+	background-image: url('icons/png/sky.png');
+}
+
+.sunny {
+	background-image: url('icons/png/sunny.png');
+}
+
+
+.temp {
 	display: inline-block;
 	margin: 5px 10px;
 }
 
-.high_temp {
-	display: inline-block;
-	margin: 5px: 10px;
-}
+
+
+
+
+
+
+
+
+
+

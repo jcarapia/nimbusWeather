@@ -12,8 +12,10 @@ export default class App extends Component {
   render() {
     return (
       <div>
-      React-Redux Template for Heroku
+      <div className="app_title">TurboWeather</div>
+
       <SearchField />
+
       <WeatherList />
       </div>
     );

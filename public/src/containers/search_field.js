@@ -17,7 +17,7 @@ class SearchField extends Component {
 	componentDidMount() {
 		if(this.state.city) {
 			this.props.getWeather(this.state.city);
-			console.log(this.state.city)
+			this.setState({city: ''})
 		}
 	}
 
@@ -29,12 +29,15 @@ class SearchField extends Component {
 		e.preventDefault();
 		this.props.getWeather(this.state.city);
 		localStorage.setItem('weather_city', this.state.city);
+		this.setState({city: ''});
 	}
 
 	render() {
 		return (
-			<form className="input-group" onSubmit={this.onFormSubmit.bind(this)}>
+
+			<form className="input-group col-md-6" onSubmit={this.onFormSubmit.bind(this)}>
 				<input 
+					value={this.state.city}
 					className="form-control"
 					placeholder="Enter the name of a city..."
 					onChange={this.onInputChange.bind(this)}
@@ -43,6 +46,7 @@ class SearchField extends Component {
 					<button type="submit" className="btn btn-secondary">Submit</button>
 				</span>
 			</form>
+
 		)
 	}
 }

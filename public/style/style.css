@@ -1,10 +1,14 @@
 
 /*
-// -- Congigurations --- 
+// --- General Congigurations --- 
 */
 .clearfix {
     overflow: auto;
 }
+
+/*
+// === General App Appearance === 
+*/
 
 .logo {
 	margin-top: 15px;
@@ -23,12 +27,9 @@
 	text-align: center;
 }
 
-.app_search {
-	position: fixed;
-	width: 100%;
-	background-color: #fff;
-}
-
+/*
+// === Search Field Component ===
+*/
 .input-group {
 	margin: 0 auto;
 }
@@ -44,10 +45,17 @@
 	color: #fff;
 }
 
+/*
+// === Weather List Component ===
+*/
 
 .weather-list {
 	margin-top: 10px;
 }
+
+/*
+// === Weather Day Component ===
+*/
 
 .weather_day_container {
 	float: left;
@@ -65,8 +73,13 @@
 	margin-bottom: 1px;
 }
 
+.temp {
+	display: inline-block;
+	margin: 5px 10px;
+}
+
 /*
-// -- Icon Classes
+// === Weather Icons === 
 */
 .weather_icon {
 	height: 128px;
@@ -100,10 +113,6 @@
 }
 
 
-.temp {
-	display: inline-block;
-	margin: 5px 10px;
-}
 
 
 

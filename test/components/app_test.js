@@ -1,14 +1,23 @@
 import { renderComponent , expect } from '../test_helper';
-import App from '../../src/components/app';
+import App from '../../public/src/components/app';
 
-describe('App' , () => {
-  let component;
+describe('Nimbus', () => {
 
-  beforeEach(() => {
-    component = renderComponent(App);
-  });
+	let component;
 
-  it('renders something', () => {
-    expect(component).to.exist;
-  });
+	beforeEach(() => {
+		component = renderComponent(App);
+	})
+
+	it('should exist', () => {
+		expect(component).to.exist;
+	});
+
+	it('should have a SearchField form component', () => {
+		expect(component.find('.search-field')).to.exist;
+	});
+
+	it('should have a WeatherList component', () => {
+		expect(component.find('.weather-list')).to.exist;
+	});
 });

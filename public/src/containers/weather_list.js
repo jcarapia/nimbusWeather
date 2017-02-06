@@ -9,9 +9,7 @@ class WeatherList extends Component {
 
 		if(data.query.results.channel){
 
-
 		const temps_array = data.query.results.channel;
-		console.log('the temps array', temps_array);
 
 		return (
 			temps_array.map(function(day){
@@ -38,18 +36,17 @@ class WeatherList extends Component {
 	} else {
 		return (<div>Loading</div>)
 	}
-}
-
+};
 
 	render() {
 
 		return (
-			<div className="container weather_list">
+			<div className="container weather-list">
 				{this.props.weather.map(this.renderWeather)}
 			</div>
 		)
 	}
-}
+};
 
 function mapStateToProps({weather}) {
 	return {weather};

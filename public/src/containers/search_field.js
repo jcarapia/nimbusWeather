@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {getWeather} from '../actions/index'
+import {getWeather} from '../actions/index';
+
 
 class SearchField extends Component {
 	constructor(props) {
@@ -12,29 +13,29 @@ class SearchField extends Component {
 
 	componentWillMount() {
 		this.setState({city: localStorage.getItem("weather_city")});
-	}
+	};
 
 	componentDidMount() {
 		if(this.state.city) {
 			this.props.getWeather(this.state.city);
 			this.setState({city: ''})
 		}
-	}
+	};
 
 	onInputChange(e) {
 		this.setState({city: e.target.value});
-	}
+	};
 
 	onFormSubmit(e) {
 		e.preventDefault();
 		this.props.getWeather(this.state.city);
 		localStorage.setItem('weather_city', this.state.city);
 		this.setState({city: ''});
-	}
+	};
 
 	render() {
 		return (
-			<form className="input-group col-md-6 col-sm-8" onSubmit={this.onFormSubmit.bind(this)}>
+			<form className="search-field input-group col-md-6 col-sm-8" onSubmit={this.onFormSubmit.bind(this)}>
 				<input 
 					value={this.state.city}
 					className="form-control"
@@ -47,7 +48,7 @@ class SearchField extends Component {
 			</form>
 		)
 	}
-}
+};
 
 function mapDispatchToProps(dispatch) {
 	return bindActionCreators({getWeather}, dispatch);

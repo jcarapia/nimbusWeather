@@ -5,15 +5,10 @@ import WeatherList from '../containers/weather_list';
 
 export default class App extends Component {
 
-	// componentWillMount() {
-	// 	console.log(localStorage.getItem("weather_city"));
-	// }
-
   render() {
     return (
       <div>
       <SearchField />
-
       <WeatherList />
       </div>
     );

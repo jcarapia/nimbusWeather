@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default (props) => {
-	console.log('from the component', props.code)
+
 	const code = Number(props.code);
 	let weather_class;
 
@@ -17,9 +17,7 @@ export default (props) => {
 		weather_class='weather_icon cloudy';
 	} else {
 		weather_class='weather_icon sunny';
-	}
-
-
+	};
 
 	return (
 		<div className="weather_day_container col-lg-6 col-md-12">
@@ -54,4 +52,4 @@ export default (props) => {
 			</div>
 		</div>
 	)
-}
+};

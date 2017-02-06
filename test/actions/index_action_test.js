@@ -11,9 +11,10 @@ describe('actions', () => {
 			expect(action.type).to.equal(GET_FORECAST);
 		});
 
-		it('has the correct payload', () => {
-			const payload = typeof(getWeather('Oakland').payload);
-			expect(payload).to.equal('object');
+		it('should retrieve data from Yahoo Weather API', () => {
+			const weather = getWeather('Oakland');
+			expect(Promise.resolve(weather.payload)).to.eventually.have.property('status', 200);
+			expect(Promise.resolve(weather.payload)).to.eventually.have.property('data');
 		});
 
 	})

@@ -5,6 +5,7 @@ import TestUtils from 'react-addons-test-utils';
 import jsdom from 'jsdom';
 import chai, { expect } from 'chai';
 import chaiAsPromised from "chai-as-promised";
+import spies from 'chai-spies';
 import chaiJquery from 'chai-jquery';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
@@ -16,6 +17,7 @@ global.navigator = global.window.navigator;
 const $ = _$(window);
 
 chai.use(chaiAsPromised);
+chai.use(spies);
 
 chaiJquery(chai, chai.util, $);
 

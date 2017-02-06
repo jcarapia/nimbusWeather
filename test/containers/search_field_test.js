@@ -35,9 +35,9 @@ describe('SearchField', () => {
 			component.simulate('submit');
 			expect(component.find('input')).to.have.value('');
 		});
-
-
 	});
+
+	
 
 
 })

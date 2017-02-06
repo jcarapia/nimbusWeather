@@ -1,7 +1,6 @@
 import { renderComponent , expect } from '../test_helper';
 import WeatherList from '../../public/src/containers/weather_list';
-
-const weather = require('../sample_props');
+import weather from '../sample_props'
 
 describe('WeatherList', () => {
 

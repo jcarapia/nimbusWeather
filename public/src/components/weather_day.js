@@ -2,6 +2,7 @@ import React from 'react';
 
 export default (props) => {
 
+	//console.log('props from weatherday', props);
 	const code = Number(props.code);
 	let weather_class;
 
@@ -27,7 +28,7 @@ export default (props) => {
 				<div className={weather_class} ></div>
 
 				<div>
-					<div className="weather_day_date">
+					<div className="weather_day_location">
 						<p>{props.location}</p>
 					</div>
 

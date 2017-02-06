@@ -46,7 +46,7 @@ class WeatherList extends Component {
 			<div className="container weather-list">
 				{this.props.weather.map(this.renderWeather)}
 				<div className="credits">
-					App icons created by <a href="www.flaticon.com" target="_blank">Flaticon</a>
+					App icons created by <a href="http://www.flaticon.com" target="_blank">Flaticon</a>
     		</div>
 			</div>
 		)

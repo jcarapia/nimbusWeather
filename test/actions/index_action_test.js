@@ -4,6 +4,7 @@ import {GET_FORECAST, getWeather} from '../../public/src/actions';
 
 
 describe('actions', () => {
+	
 	describe('getWeather', () => {
 
 		it('has the correct type', () => {
@@ -17,6 +18,6 @@ describe('actions', () => {
 			expect(Promise.resolve(weather.payload)).to.eventually.have.property('data');
 		});
 
-	})
+	});
 
-})
+});

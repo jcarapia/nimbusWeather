@@ -7,7 +7,7 @@ describe('Nimbus', () => {
 
 	beforeEach(() => {
 		component = renderComponent(App);
-	})
+	});
 
 	it('should exist', () => {
 		expect(component).to.exist;
@@ -20,4 +20,5 @@ describe('Nimbus', () => {
 	it('should have a WeatherList component', () => {
 		expect(component.find('.weather-list')).to.exist;
 	});
+	
 });

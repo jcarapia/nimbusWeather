@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {getWeather} from '../actions/index';
 
-
 class SearchField extends Component {
 	constructor(props) {
 		super(props);

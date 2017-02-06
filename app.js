@@ -10,5 +10,5 @@ app.use(express.static(__dirname + '/public'));
 
 const server = http.createServer(app);
 server.listen(port);
-console.log('Server started');
+console.log('Get your 10-day forecast on port: ', port);
 

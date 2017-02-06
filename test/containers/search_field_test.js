@@ -7,7 +7,7 @@ describe('SearchField', () => {
 	
 	beforeEach(() => {
 		component = renderComponent(SearchField);
-	})
+	});
 
 	it('should exist', () => {
 		expect(component).to.exist;
@@ -36,8 +36,5 @@ describe('SearchField', () => {
 			expect(component.find('input')).to.have.value('');
 		});
 	});
-
 	
-
-
-})
+});

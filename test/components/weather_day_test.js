@@ -14,7 +14,7 @@ describe('WeatherDay', () => {
 	
 	it('should exist', () => {
 		expect(component).to.exist;
-	})
+	});
 
 	it('should render the correct weather information', () => {
 		expect(component.find('.weather_day_location').first()).to.contain('Oakland');
@@ -23,4 +23,5 @@ describe('WeatherDay', () => {
 		expect(component.find('.weather_day_temp').first()).to.contain('lo: 50');
 		expect(component.find('.weather_day_desc').first()).to.contain('Rain');
 	});
-})
+	
+});

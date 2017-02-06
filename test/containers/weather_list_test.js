@@ -16,6 +16,6 @@ describe('WeatherList', () => {
 
 	it('should render 10 weather day elements', () => {
 		expect(component.find('.weather_day_container').length).to.equal(10);
-	})
+	});
 
-})
+});

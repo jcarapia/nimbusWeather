@@ -2,7 +2,7 @@ import axios from 'axios';
 
 /*
 The url to receive a 10-day forcast for a specific city.
-Keep for reference only.
+Keep here as comment for reference only.
 
 const ROOT_URL = `https://query.yahooapis.com/v1/public/yql?
 									format=json&q=select+title%2C+units.temperature%2C+

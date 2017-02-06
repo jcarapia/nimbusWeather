@@ -13,6 +13,7 @@ class WeatherList extends Component {
 
 		return (
 			temps_array.map(function(day){
+
 				const location = day.title.split('-')[1];
 				const date = day.item.forecast.date;
 				const week_day = day.item.forecast.day;
@@ -20,6 +21,7 @@ class WeatherList extends Component {
 				const low = day.item.forecast.low;
 				const desc = day.item.forecast.text;
 				const code = day.item.forecast.code;
+				
 				return (
 					<WeatherDay 
 						location={location}

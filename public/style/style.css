@@ -1,3 +1,7 @@
+body, div {
+	margin: 0;
+	padding: 0;
+}
 
 /*
 // --- General Congigurations --- 
@@ -117,6 +121,9 @@
 	background-image: url('icons/png/sunny.png');
 }
 
+.credits {
+	font-size: 12px;
+}
 
 
 

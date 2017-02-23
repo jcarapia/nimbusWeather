@@ -1,6 +1,6 @@
 
 import {expect} from '../test_helper';
-import {GET_FORECAST, getWeather} from '../../public/src/actions';
+import {GET_FORECAST, getWeather} from '../../src/actions';
 
 
 describe('actions', () => {

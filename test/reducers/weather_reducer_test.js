@@ -1,8 +1,8 @@
 import {expect} from '../test_helper';
-import weatherReducer from '../../public/src/reducers/weather_reducer';
+import weatherReducer from '../../src/reducers/weather_reducer';
 import sample_props from '../sample_props'
 
-import {GET_FORECAST} from '../../public/src/actions';
+import {GET_FORECAST} from '../../src/actions';
 
 describe('Weather Reducer', () => {
 	

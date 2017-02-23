@@ -1,5 +1,5 @@
 import { renderComponent , expect } from '../test_helper';
-import SearchField from '../../public/src/containers/search_field';
+import SearchField from '../../src/containers/search_field';
 
 describe('SearchField', () => {
 

@@ -1,5 +1,5 @@
 import { renderComponent , expect } from '../test_helper';
-import WeatherList from '../../public/src/containers/weather_list';
+import WeatherList from '../../src/containers/weather_list';
 import weather from '../sample_props'
 
 describe('WeatherList', () => {

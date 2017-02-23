@@ -24393,6 +24393,12 @@
 							'Flaticon'
 						),
 						_react2.default.createElement(
+							'span',
+							null,
+							' - '
+						),
+						'Weather Forecast',
+						_react2.default.createElement(
 							'a',
 							{ href: 'https://www.yahoo.com/?ilc=401', target: '_blank' },
 							' ',

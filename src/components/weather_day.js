@@ -1,9 +1,8 @@
 import React from 'react';
 
 export default (props) => {
-
-	//console.log('props from weatherday', props);
 	const code = Number(props.code);
+
 	let weather_class;
 
 	if(code >=5 && code <=8 || code >=13 && code <=16 || code >=41 && code <=43 || code === 46 ){

@@ -10,7 +10,6 @@ class SearchField extends Component {
 	}
 
 	componentWillMount() {
-		//this.setState({city: localStorage.getItem("weather_city")});
 
 		function getCookie(cname) {
 	    var name = cname + "=";

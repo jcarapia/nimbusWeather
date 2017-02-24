@@ -47,7 +47,6 @@ class SearchField extends Component {
 		e.preventDefault();
 		this.props.getWeather(this.state.city);
 		document.cookie = `weatherCookie=${this.state.city}`;
-		localStorage.setItem('weather_city', this.state.city);
 		this.setState({city: ''});
 	};
 

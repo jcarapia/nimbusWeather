@@ -3,11 +3,13 @@ body, div {
 	padding: 0;
 }
 
+
+
 /*
 // --- General Congigurations --- 
 */
 .clearfix {
-    overflow: auto;
+	overflow: auto;
 }
 
 /*
@@ -123,6 +125,13 @@ body, div {
 
 .credits {
 	font-size: 12px;
+}
+
+.credits a:link,
+.credits a:active,
+.credits a:hover,
+.credits a:visited {
+	text-decoration: none;
 }
 
 

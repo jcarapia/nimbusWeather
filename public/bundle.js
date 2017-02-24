@@ -22456,7 +22456,6 @@
 		_createClass(SearchField, [{
 			key: 'componentWillMount',
 			value: function componentWillMount() {
-				//this.setState({city: localStorage.getItem("weather_city")});
 
 				function getCookie(cname) {
 					var name = cname + "=";
@@ -24392,9 +24391,8 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = function (props) {
-
-		//console.log('props from weatherday', props);
 		var code = Number(props.code);
+
 		var weather_class = void 0;
 
 		if (code >= 5 && code <= 8 || code >= 13 && code <= 16 || code >= 41 && code <= 43 || code === 46) {

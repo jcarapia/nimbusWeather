@@ -6,12 +6,31 @@ import {getWeather} from '../actions/index';
 class SearchField extends Component {
 	constructor(props) {
 		super(props);
-
 		this.state = {city: ''}
 	}
 
 	componentWillMount() {
-		this.setState({city: localStorage.getItem("weather_city")});
+		//this.setState({city: localStorage.getItem("weather_city")});
+
+		function getCookie(cname) {
+	    var name = cname + "=";
+	    var decodedCookie = decodeURIComponent(document.cookie);
+	    var ca = decodedCookie.split(';');
+	    for(var i = 0; i <ca.length; i++) {
+	        var c = ca[i];
+	        while (c.charAt(0) == ' ') {
+	            c = c.substring(1);
+	        }
+	        if (c.indexOf(name) == 0) {
+	            return c.substring(name.length, c.length);
+	        }
+	    }
+	    return "";
+			};
+
+			let city = getCookie('weatherCookie');
+
+			this.setState({city: city});
 	};
 
 	componentDidMount() {
@@ -28,6 +47,7 @@ class SearchField extends Component {
 	onFormSubmit(e) {
 		e.preventDefault();
 		this.props.getWeather(this.state.city);
+		document.cookie = `weatherCookie=${this.state.city}`;
 		localStorage.setItem('weather_city', this.state.city);
 		this.setState({city: ''});
 	};

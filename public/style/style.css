@@ -3,17 +3,15 @@ body, div {
 	padding: 0;
 }
 
-
-
 /*
-// --- General Congigurations --- 
+ --- General Congigurations --- 
 */
 .clearfix {
 	overflow: auto;
 }
 
 /*
-// === General App Appearance === 
+ === General App Appearance === 
 */
 
 .logo {
@@ -38,8 +36,15 @@ body, div {
 	text-align: center;
 }
 
+.credits a:link,
+.credits a:active,
+.credits a:hover,
+.credits a:visited {
+	text-decoration: none;
+}
+
 /*
-// === Search Field Component ===
+ === Search Field Component ===
 */
 .input-group {
 	margin: 0 auto;
@@ -57,7 +62,7 @@ body, div {
 }
 
 /*
-// === Weather List Component ===
+ === Weather List Component ===
 */
 
 .weather-list {
@@ -65,7 +70,7 @@ body, div {
 }
 
 /*
-// === Weather Day Component ===
+ === Weather Day Component ===
 */
 
 .weather_day_container {
@@ -90,7 +95,7 @@ body, div {
 }
 
 /*
-// === Weather Icons === 
+ === Weather Icons === 
 */
 .weather_icon {
 	height: 128px;
@@ -126,22 +131,3 @@ body, div {
 .credits {
 	font-size: 12px;
 }
-
-.credits a:link,
-.credits a:active,
-.credits a:hover,
-.credits a:visited {
-	text-decoration: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
